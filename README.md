@@ -3,11 +3,11 @@
 
 ====================
 #### Considerações Gerais
-Você deverá usar este repositório como o repo principal do projeto, i.e., todos os seus commits devem estar registrados aqui, pois queremos ver como você trabalha.
+Você deverá usar um repositório privado para este projeto e fornecer o acesso ao email indicado pela Maqhin, i.e., todos os seus commits devem estar registrados aqui, pois queremos ver como você trabalha.
 
 Esse problema tem 2 constraints:
 
-a) Eu preciso conseguir rodar seu código em um Mac OS X OU no Ubuntu;
+a) Eu preciso conseguir rodar seu código em um Mac OSX ou no Ubuntu;
 
 b) Eu executarei seu código com os seguintes comandos ou algo similar (dê-me as instruções):
 
@@ -16,7 +16,7 @@ b) Eu executarei seu código com os seguintes comandos ou algo similar (dê-me a
     ./configure
     make
 
-Esses comandos tem que ser o suficiente para configurar meu Mac OS X ou Ubuntu e rodar seu programa.
+Esses comandos tem que ser o suficiente para configurar meu Mac OSX ou Ubuntu e rodar seu programa.
 
 Pode considerar que eu tenho instalado no meu sistema Java, Pyhton, Ruby ou Go. Qualquer outra dependência que eu precisar você tem que prover.
 
@@ -34,7 +34,7 @@ O Vigilante é um sistema desenvolvido pela Maqhin, onde usuários podem registr
 ============================
 #### Regras de negócio
 
-1. Os usuário podem cadastrar quantas ocorrências desejar, entretanto, a Maqhin não gostaria de receber cadastros oriundos de uma máquina e sim cadastros realizados por pessoas pessoas.
+1. Os usuário podem cadastrar quantas ocorrências desejar, entretanto, a Maqhin não gostaria de receber cadastros oriundos de uma máquina e sim cadastros realizados por pessoas manualmente.
 2. O Vigilante tem abrangência Nacional. Para facilitar vamos trabalhar com 1000 cadastros/segundo.
 3. A interface do produto é extremamente importante. Porém, você não tem muito tempo, então faça o melhor possível no tempo que tem.
 4. A Maqhin gostaria de consultar numa URL, o total de geral ocorrências cadastradas, o total por usuário e o total de cadastros de ocorrências por hora.
