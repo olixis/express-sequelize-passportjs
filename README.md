@@ -3,7 +3,7 @@
 
 ====================
 #### Considerações Gerais
-Você deverá usar um repositório privado para este projeto e fornecer o acesso ao email indicado pela Maqhin, i.e., todos os seus commits devem estar registrados aqui, pois queremos ver como você trabalha.
+Será indicado um repositório privado no GitLab para este projeto e você deve fornecer o nome da sua conta no GitLab (caso não tenha, o registro é gratuito) para o email indicado pela Maqhin para ser incluído no projeto, i.e., todos os seus commits devem estar registrados aqui, pois queremos ver como você trabalha.
 
 Esse problema tem 2 constraints:
 
@@ -35,17 +35,22 @@ O Vigilante é um sistema desenvolvido pela Maqhin, onde usuários podem registr
 #### Regras de negócio
 
 1. Os usuário podem cadastrar quantas ocorrências desejar, entretanto, a Maqhin não gostaria de receber cadastros oriundos de uma máquina e sim cadastros realizados por pessoas manualmente.
-2. O Vigilante tem abrangência Nacional. Para facilitar vamos trabalhar com 1000 cadastros/segundo.
-3. A interface do produto é extremamente importante. Porém, você não tem muito tempo, então faça o melhor possível no tempo que tem.
-4. A Maqhin gostaria de consultar numa URL, o total de geral ocorrências cadastradas, o total por usuário e o total de cadastros de ocorrências por hora.
+2. A interface do produto é importante. Porém, você não tem muito tempo, então faça o melhor possível no tempo que tem.
+3. A Maqhin gostaria de consultar numa URL, o total de geral ocorrências cadastradas, o total por usuário e o total de cadastros de ocorrências por hora.
 
 
 ===============================================
 #### O que será avaliado na sua solução?
 
-1. Sua solução será submetida a uma bateria de testes de performance para garantir que atende aos requisitos (performance e escalabilidade).
+1. Sua solução será submetida a uma bateria de testes para garantir que sua solução atende aos requisitos solicitados.
 2. Seu código será observado por uma equipe de desenvolvedores que avaliarão a simplicidade e clareza da solução, a arquitetura, documentação, estilo de código, testes unitários, testes funcionais, nível de automação dos testes, o design da interface e a implementação do código.
 3. A automação da infra-estrutura também é importante. Imagine que você precisará fazer deploy do seu código em múltiplos servidores, então não é interessante ter que ficar entrando máquina por máquina para fazer o deploy da aplicação.
+
+
+===============================================
+#### Diferenciais
+1. O Vigilante tem abrangência Nacional, sua solução será submetida a uma bateria de testes de performance para garantir que atende aos requisitos de performance e escalabilidade.
+2. Criação de testes automatizados e sua cobertura será considerado um diferencial importante.
 
 =============
 #### Dicas
