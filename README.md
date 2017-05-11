@@ -18,7 +18,7 @@ b) Eu executarei seu código com os seguintes comandos ou algo similar (dê-me a
 
 Esses comandos tem que ser o suficiente para configurar meu Mac OSX ou Ubuntu e rodar seu programa.
 
-Pode considerar que eu tenho instalado no meu sistema Java, Pyhton, Ruby ou Go. Qualquer outra dependência que eu precisar você tem que prover.
+Pode considerar que eu tenho instalado no meu sistema Java, Pyhton, Ruby, PHP, Go ou qualquer linguagem a sua escolha. Qualquer outra dependência que eu precisar você tem que prover.
 
 O problema que você tem que resolver é o problema de cadastro de Ocorrência do Vigilante em versão WEB com HTML/CSS/Javascript + o backend usando a linguagem de programação da sua preferência.
 
@@ -36,7 +36,7 @@ O Vigilante é um sistema desenvolvido pela Maqhin, onde usuários podem registr
 
 1. Os usuário podem cadastrar quantas ocorrências desejar, entretanto, a Maqhin não gostaria de receber cadastros oriundos de uma máquina e sim cadastros realizados por pessoas manualmente.
 2. A interface do produto é importante. Porém, você não tem muito tempo, então faça o melhor possível no tempo que tem.
-3. A Maqhin gostaria de consultar numa URL, o total de geral ocorrências cadastradas e o total de cadastros de ocorrências por categoria.
+3. A Maqhin gostaria de consultar numa URL, o total geral de ocorrências cadastradas e o total de ocorrências por categoria.
 
 
 ===============================================
