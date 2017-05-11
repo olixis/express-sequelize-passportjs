@@ -1,8 +1,12 @@
-## Seleção Web
+## Deafio Web
 **Maqhin Soluções Tecnológicas: coding challenge**
 
 ====================
 #### Considerações Gerais
+Esse desafio é facultativo, sem nenhuma obrigação de participação. O tempo esperado para entrega é da solução são 2 semanas. A não participação deste desafio não elimina nem invalida sua participação no processo seletivo.
+
+Registre todo e qualquer trabalho feito, pois iremos considerar e avaliar o código e a solução, ainda que apenas em estado parcial ou inicial.
+
 Será indicado um repositório privado no GitLab para este projeto e você deve fornecer o nome da sua conta no GitLab (caso não tenha, o registro é gratuito) para o email indicado pela Maqhin para ser incluído no projeto, i.e., todos os seus commits devem estar registrados aqui, pois queremos ver como você trabalha.
 
 Esse problema tem 2 constraints:
