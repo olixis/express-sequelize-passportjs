@@ -35,6 +35,8 @@ O repositório contém um arquivo com tipos de ocorrência em json e algumas ima
 
 O Vigilante é um sistema desenvolvido pela Maqhin, onde usuários podem registrar "Ocorrências Urbanas". O cadastro de Ocorrência é apresentada em uma interface acessível pela WEB onde os usuários cadastram suas Ocorrências. Uma vez realizado o cadastro da Ocorrência, o usuário recebe uma tela com o comprovante do sucesso e um mapa com ocorrências cadastradas até aquele momento.
 
+Dentro deste projeto está um arquivo em formato JSON com a descrição simplificada das categorias possíveis para uma Ocorrência. Também junto ao projeto está um exemplo de interface para a tela de Cadstro da Ocorrência, descrevendo os seus campos.
+
 ============================
 #### Regras de negócio
 
