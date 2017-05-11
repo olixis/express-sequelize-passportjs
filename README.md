@@ -48,13 +48,12 @@ O Vigilante é um sistema desenvolvido pela Maqhin, onde usuários podem registr
 
 1. Sua solução será submetida a uma bateria de testes para garantir que sua solução atende aos requisitos solicitados.
 2. Seu código será observado por uma equipe de desenvolvedores que avaliarão a simplicidade e clareza da solução, a arquitetura, documentação, estilo de código, testes unitários, testes funcionais, nível de automação dos testes, o design da interface e a implementação do código.
-3. A automação da infra-estrutura também é importante. Imagine que você precisará fazer deploy do seu código em múltiplos servidores, então não é interessante ter que ficar entrando máquina por máquina para fazer o deploy da aplicação.
-
 
 ===============================================
 #### Diferenciais
 1. O Vigilante tem abrangência Nacional, sua solução será submetida a uma bateria de testes de performance para garantir que atende aos requisitos de performance e escalabilidade.
 2. Criação de testes automatizados e sua cobertura será considerado um diferencial importante.
+3. A automação da infra-estrutura também é importante. Imagine que você precisará fazer deploy do seu código em múltiplos servidores, então não é interessante ter que ficar entrando máquina por máquina para fazer o deploy da aplicação.
 
 =============
 #### Dicas
