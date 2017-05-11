@@ -36,7 +36,7 @@ O Vigilante é um sistema desenvolvido pela Maqhin, onde usuários podem registr
 
 1. Os usuário podem cadastrar quantas ocorrências desejar, entretanto, a Maqhin não gostaria de receber cadastros oriundos de uma máquina e sim cadastros realizados por pessoas manualmente.
 2. A interface do produto é importante. Porém, você não tem muito tempo, então faça o melhor possível no tempo que tem.
-3. A Maqhin gostaria de consultar numa URL, o total de geral ocorrências cadastradas, o total por usuário e o total de cadastros de ocorrências por hora.
+3. A Maqhin gostaria de consultar numa URL, o total de geral ocorrências cadastradas e o total de cadastros de ocorrências por categoria.
 
 
 ===============================================
