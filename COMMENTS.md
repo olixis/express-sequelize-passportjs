@@ -9,7 +9,7 @@
 - **Enquanto a aplicação estiver sem docker, ela só rodará caso exista um banco mysql ativo com um schema chamado 'test' com usuário 'root' e senha nula, além de terem sido executadas as migrations.** (Ou você pode alterar a linha: const sequelize = new Sequelize('mysql://root:@localhost:3306/test') em app.js para se conectar a um banco, mesmo assim ainda é necessário rodar as migrations para criar as tabelas no banco)
 
 
-### Caso a última condição lista esteja satisfeita, para rodar a aplicação rode os comandos:
+### Caso a última condição da lista esteja satisfeita, para rodar a aplicação rode os comandos:
     cd pasta do projeto
     npm install
     npm install -g sequelize-cli
