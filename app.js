@@ -12,7 +12,7 @@ const Models = require('./models/');
 const index = require('./routes/index');
 const users = require('./routes/users');
 
-const sequelize = new Sequelize('mysql://root:@localhost:3306/test');
+const sequelize = new Sequelize('mysql://root:hahaha123@localhost:3306/test');
 
 sequelize
   .authenticate()
