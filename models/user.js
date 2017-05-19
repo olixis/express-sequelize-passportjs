@@ -14,10 +14,20 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [6,10],
+        len: [6, 10],
         notNull: true,
         notEmpty: true,
       },
+    },
+    createdAt: {
+      type: DataTypes.TIME,
+      allowNull: true,
+      field: 'created_at'
+    },
+    updatedAt: {
+      type: DataTypes.TIME,
+      allowNull: true,
+      field: 'updated_at'
     }
   }, {
       classMethods: {

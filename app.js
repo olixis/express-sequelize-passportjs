@@ -3,17 +3,18 @@ const path = require('path');
 const favicon = require('serve-favicon');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
-const passport = require('passport')
-const session = require('express-session')
+const passport = require('passport');
+const session = require('express-session');
 const LocalStrategy = require('passport-local').Strategy;
 const Sequelize = require('sequelize');
-const Models = require('./models/');
+const User = require('./models/').User;
 
 const index = require('./routes/index');
 const users = require('./routes/users');
 
-const sequelize = new Sequelize('mysql://root:hahaha123@localhost:3306/test');
+const sequelize = new Sequelize('mysql://root:@localhost:3306/test');
 
+//Teste conexão com o banco
 sequelize
   .authenticate()
   .then(err => {
@@ -39,7 +40,26 @@ app.use(session({secret: '123secreto321'}));
 app.use(passport.initialize());
 app.use(passport.session());
 
+passport.serializeUser((user, done) => {
+  done(null, user.id);
+});
 
+passport.deserializeUser((id, done) => {
+  done(null, id);
+});
+
+passport.use(new LocalStrategy(
+  (username, password, done) => {
+    User.findOne({
+      where: {
+        email: username,
+        password: password
+      }
+    }).then((user) => {
+       done(null, user) })
+      .catch((err) => done(err));
+  }
+));
 
 app.use('/', index);
 app.use('/users', users);
