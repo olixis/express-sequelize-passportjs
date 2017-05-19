@@ -21,5 +21,6 @@
 
 - Registro de usuários com implementação pendente, porém, a entidade já está configurada para cadastrar usuários no banco.
 - Estudando a mudança do framework css bulma para bootstrap -> (que já está sendo usado na tela de login)
+- Correção na entidade de usuário.
 
 *  Alguns templates html prontos foram pegos da internet e utilizados para agilizar o dev.
