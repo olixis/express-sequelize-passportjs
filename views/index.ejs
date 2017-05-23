@@ -2,122 +2,102 @@
 <html style="overflow: hidden;" lang="en">
 
 <head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script>
-        function initMap() {
-            var uluru = {
-                lat: -25.363,
-                lng: 131.044
-            };
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 4,
-                center: uluru
-            });
-            var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-            });
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+  <script src="../javascripts/bootstrap.min.js"></script>
+  <script>
+    var markers = [];
+
+    function initMap() {
+      var brotas = {
+        lat: -12.9626002,
+        lng: -38.4705724
+      };
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 13,
+        center: brotas
+      });
+
+      map.addListener('click', function (event) {
+        deleteMarkers();
+        addMarker(event.latLng);
+      });
+
+      var marker = new google.maps.Marker({
+        position: brotas,
+        map: map
+      });
+      markers.push(marker);
+
+      function addMarker(location) {
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map
+        });
+        markers.push(marker);
+      }
+
+      function setMapOnAll(map) {
+        for (var i = 0; i < markers.length; i++) {
+          markers[i].setMap(map);
         }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvLXvq_MZR-Zoa8zqvYY2VrvsdVESjoHM&callback=initMap" async
-        defer></script>
+      }
+
+      function clearMarkers() {
+        setMapOnAll(null);
+      }
+
+      function deleteMarkers() {
+        clearMarkers();
+        markers = [];
+      }
+
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvLXvq_MZR-Zoa8zqvYY2VrvsdVESjoHM&callback=initMap" async
+    defer></script>
 </head>
 
 <body>
-    <div class="columns">
-        <form class="column is-2 container is-fullheight is-hidden-mobile">
-            <div class="field">
-                <label class="label">Name</label>
-                <p class="control">
-                    <input class="input" type="text" placeholder="Text input">
-                </p>
-            </div>
-
-            <div class="field">
-                <label class="label">Username</label>
-                <p class="control has-icons-left has-icons-right">
-                    <input class="input is-success" type="text" placeholder="Text input" value="bulma">
-                    <span class="icon is-small is-left">
-      <i class="fa fa-user"></i>
-    </span>
-                    <span class="icon is-small is-right">
-      <i class="fa fa-check"></i>
-    </span>
-                </p>
-                <p class="help is-success">This username is available</p>
-            </div>
-
-            <div class="field">
-                <label class="label">Email</label>
-                <p class="control has-icons-left has-icons-right">
-                    <input class="input is-danger" type="text" placeholder="Email input" value="hello@">
-                    <span class="icon is-small is-left">
-      <i class="fa fa-envelope"></i>
-    </span>
-                    <span class="icon is-small is-right">
-      <i class="fa fa-warning"></i>
-    </span>
-                </p>
-                <p class="help is-danger">This email is invalid</p>
-            </div>
-
-            <div class="field">
-                <label class="label">Subject</label>
-                <p class="control">
-                    <span class="select">
-      <select>
-        <option>Select dropdown</option>
-        <option>With options</option>
-      </select>
-    </span>
-                </p>
-            </div>
-
-            <div class="field">
-                <label class="label">Message</label>
-                <p class="control">
-                    <textarea class="textarea" placeholder="Textarea"></textarea>
-                </p>
-            </div>
-
-            <div class="field">
-                <p class="control">
-                    <label class="checkbox">
-      <input type="checkbox">
-      I agree to the <a href="#">terms and conditions</a>
+  <div class="container-fluid">
+    <div class="row">
+      <div id="inputForm" style="height: 100vh;overflow-y: scroll;" class="col-2">
+        <form>
+          <div class="form-group">
+            <label for="exampleSelect1">Categoria</label>
+            <select class="form-control" id="exampleSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputFile">Insira o arquivo</label>
+            <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+          </div>
+          <fieldset class="form-group">
+          </fieldset>
+          <div class="form-check">
+            <label class="form-check-label">
+      <input type="checkbox" class="form-check-input">
+      Check me out
     </label>
-                </p>
-            </div>
-
-            <div class="field">
-                <p class="control">
-                    <label class="radio">
-      <input type="radio" name="question">
-      Yes
-    </label>
-                    <label class="radio">
-      <input type="radio" name="question">
-      No
-    </label>
-                </p>
-            </div>
-
-            <div class="field is-grouped">
-                <p class="control">
-                    
-                   <button class="button is-primary">Submit</button>
-                </p>
-                <p class="control">
-                    <a href="/logout"><div class="button is-link">logout</div></a>
-                </p>
-            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-        <div id="map" class="column hero is-fullheight is-10"></div>
+      </div>
+      <div style="height: 100vh" id="map" class="col-10"></div>
     </div>
+  </div>
 
 </body>
 

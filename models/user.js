@@ -6,7 +6,6 @@ module.exports = function (sequelize, DataTypes) {
       allowNull: false,
       validate: {
         isEmail: true,
-        notNull: true,
         notEmpty: true,
       },
     },
@@ -15,7 +14,6 @@ module.exports = function (sequelize, DataTypes) {
       allowNull: false,
       validate: {
         len: [6, 10],
-        notNull: true,
         notEmpty: true,
       },
     },

@@ -18,10 +18,10 @@
   <div id="loading"></div>
   <div class="login-page">
     <div class="form">
-      <form class="register-form">
-        <input id="emailR" type="text" placeholder="email address" />
-        <input id="passwordR" type="password" placeholder="password" />
-        <button id="btnRegister">create</button>
+      <form class="register-form" method="post" action="/signUp">
+        <input id="emailR"  name="user[email]" type="text" placeholder="email address" />
+        <input id="passwordR" name="user[password]" type="password" placeholder="password" />
+        <button type="submit" value="submit" id="btnRegister">create</button>
         <p class="message">Already registered? <a href="#">Sign In</a></p>
       </form>
       <form class="login-form" method="post" action="/login">

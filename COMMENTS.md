@@ -17,10 +17,18 @@
     sequelize db:migrate
     npm start
 
-# 19/05 - Implementado autenticação, Login/Logout com sessão.
+# 19/05 - Implementado autenticação, login/logout com sessão.
 
 - Registro de usuários com implementação pendente, porém, a entidade já está configurada para cadastrar usuários no banco.
 - Estudando a mudança do framework css bulma para bootstrap -> (que já está sendo usado na tela de login)
 - Correção na entidade de usuário.
 
-*  Alguns templates html prontos foram pegos da internet e utilizados para agilizar o dev.
+*  Alguns templates html prontos foram pegos da internet (página de login) e utilizados para agilizar o dev.
+
+# 22/05 - Implementado registro de usuário, esboço de tela de mapa, marcadores
+
+- Registro de usuários implementado, pendente testes automatizados e front end para erros de cadastro e/ou validação de usuário
+- Melhoria na tela de mapa , esboço do formulário de ocorrência
+- Marcadores no mapa ao clicar, falta implementar a lógica para obter informação do ponto clicado para salvar no banco junto com informação do formulário.
+
+

@@ -10,12 +10,12 @@ $(() => {
         }, "slow");
     });
 
-    $("#btnRegister").click(function () {
+/*    $("#btnRegister").click(function () {
         var email = $("#emailR").val();
         var pw = $("#passwordR").val();
 
 
-    });
+    });*/
 
 
 });
