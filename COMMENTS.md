@@ -1,3 +1,5 @@
+# Você pode testar a aplicação pela url : https://desafio-maqhin.herokuapp.com/
+
 # 16/05 - Criada a base do backend que consiste em expressJS com bd MySQL.
 - ~~Para autenticação será usada a lib PassportJS que está baixada mas não deu tempo de implementar hoje.~~
 - Para ORM foi utilizado SequelizeJS.
@@ -8,7 +10,7 @@
 
 - **Enquanto a aplicação estiver sem docker, ela só rodará caso exista um banco mysql ativo com um schema chamado 'test' com usuário 'root' e senha nula, além de terem sido executadas as migrations.** (Ou você pode alterar a linha: const sequelize = new Sequelize('mysql://'seuusuariodb':'seupassword'@localhost:3306/'seuschema') em app.js para se conectar a um banco, mesmo assim ainda é necessário rodar as migrations (sequelize db:migrate) para criar as tabelas no banco)
 
-## Você pode testar a aplicação pela url : https://desafio-maqhin.herokuapp.com/
+
 
 
 ### Caso a última condição da lista esteja satisfeita, para rodar a aplicação rode os comandos:
@@ -40,4 +42,4 @@
 - Entidade Ponto criada. Representa a posição do marker + informações do formulário.
 - implantação no Heroku para testes , url : https://desafio-maqhin.herokuapp.com/
 
-* TODO: Validações de campos, tratamento de erros na tela,salvar ponto de ocorrência no banco(entidade já está pronta), dockerizar (Heroku mostrou-se viável), testes automatizados.
+### TODO: Validações de campos, tratamento de erros na tela,salvar ponto de ocorrência no banco(entidade já está pronta), dockerizar (Heroku mostrou-se viável), testes automatizados.
