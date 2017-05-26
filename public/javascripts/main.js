@@ -10,13 +10,6 @@ $(() => {
         }, "slow");
     });
 
-/*    $("#btnRegister").click(function () {
-        var email = $("#emailR").val();
-        var pw = $("#passwordR").val();
-
-
-    });*/
-
 
 });
 function asyncLoaderDispatch() {

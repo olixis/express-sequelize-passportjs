@@ -7,9 +7,39 @@ router.get('/', function (req, res, next) {
     res.render('login');
 });
 
+let combo = {
+    "meta": {
+        "total_count": 8
+    },
+    "objects": [{
+        "id": 1,
+        "nome": "Mobilidade"
+    }, {
+        "id": 2,
+        "nome": "Redes de água e esgoto"
+    }, {
+        "id": 3,
+        "nome": "Redes de energia, dados e gás"
+    }, {
+        "id": 4,
+        "nome": "Desordem urbana"
+    }, {
+        "id": 5,
+        "nome": "Crimes"
+    }, {
+        "id": 6,
+        "nome": "Meio ambiente"
+    }, {
+        "id": 7,
+        "nome": "Comércio e serviços"
+    }, {
+        "id": 8,
+        "nome": "Outros"
+    }]
+}
 
 router.get('/map', isAuth, function (req, res, next) {
-    res.render('index');
+    res.render('index', combo);
 });
 
 router.post('/signUp', function (req, res, next) {
