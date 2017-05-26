@@ -12,7 +12,7 @@ const User = require('./models/').User;
 const index = require('./routes/index');
 const users = require('./routes/users');
 
-const sequelize = new Sequelize('mysql://root:@localhost:3306/test');
+const sequelize = new Sequelize('mysql://b716b744db86f3:db79f978@us-cdbr-iron-east-03.cleardb.net/heroku_0bf6b8571680144?reconnect=true');
 
 //Teste conexão com o banco
 sequelize
