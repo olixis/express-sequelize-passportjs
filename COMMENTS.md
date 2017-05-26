@@ -42,4 +42,4 @@
 - Entidade Ponto criada. Representa a posição do marker + informações do formulário.
 - implantação no Heroku para testes , url : https://desafio-maqhin.herokuapp.com/
 
-### TODO: Validações de campos, tratamento de erros na tela,salvar ponto de ocorrência no banco(entidade já está pronta), dockerizar (Heroku mostrou-se viável), testes automatizados.
+### TODO: Encriptar senha dos usuários antes de cadastrar no banco,Validações de campos, tratamento de erros na tela,salvar ponto de ocorrência no banco(entidade já está pronta), dockerizar (Heroku mostrou-se viável), testes automatizados.
