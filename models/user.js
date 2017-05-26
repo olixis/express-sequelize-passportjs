@@ -33,8 +33,6 @@ module.exports = function (sequelize, DataTypes) {
           // associations can be defined here
         }
       }
-    }, {
-    timestamps: false
-  });
+    });
   return User;
 };
