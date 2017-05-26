@@ -16,16 +16,6 @@ module.exports = function (sequelize, DataTypes) {
         len: [6, 10],
         notEmpty: true,
       },
-    },
-    createdAt: {
-      type: DataTypes.TIME,
-      allowNull: true,
-      field: 'created_at'
-    },
-    updatedAt: {
-      type: DataTypes.TIME,
-      allowNull: true,
-      field: 'updated_at'
     }
   }, {
       classMethods: {
