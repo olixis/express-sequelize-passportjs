@@ -8,6 +8,8 @@
 
 - **Enquanto a aplicação estiver sem docker, ela só rodará caso exista um banco mysql ativo com um schema chamado 'test' com usuário 'root' e senha nula, além de terem sido executadas as migrations.** (Ou você pode alterar a linha: const sequelize = new Sequelize('mysql://'seuusuariodb':'seupassword'@localhost:3306/'seuschema') em app.js para se conectar a um banco, mesmo assim ainda é necessário rodar as migrations (sequelize db:migrate) para criar as tabelas no banco)
 
+## Você pode testar a aplicação pela url : https://desafio-maqhin.herokuapp.com/
+
 
 ### Caso a última condição da lista esteja satisfeita, para rodar a aplicação rode os comandos:
     git clone https://olixis@gitlab.com/estagio_maqhin/desafio-caiofontes.git
@@ -32,3 +34,10 @@
 - Marcadores no mapa ao clicar, falta implementar a lógica para obter informação do ponto clicado para salvar no banco junto com informação do formulário.
 
 
+# 26/05 - Lista de categorias,Entidade dos pontos ,heroku
+
+- Combo de categorias carregado com as informações do json providenciado
+- Entidade Ponto criada. Representa a posição do marker + informações do formulário.
+- implantação no Heroku para testes , url : https://desafio-maqhin.herokuapp.com/
+
+* TODO: Validações de campos, tratamento de erros na tela,salvar ponto de ocorrência no banco(entidade já está pronta), dockerizar (Heroku mostrou-se viável), testes automatizados.
